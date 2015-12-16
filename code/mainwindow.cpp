@@ -17,10 +17,10 @@ MainWindow::MainWindow(QWidget *parent) :
     //updateIconTimer->setInterval(750);
     connect(updateIconTimer,SIGNAL(timeout()),this,SLOT(updateIcon()));
 
-    this->setWindowIcon(QIcon(":/To_Do_List.ico"));
+    this->setWindowIcon(QIcon(":/image/To_Do_List.ico"));
     this->setAutoFillBackground(true);
     QPalette palette;
-    QPixmap pixmap(":/code.jpg");
+    QPixmap pixmap(":/image/code.jpg");
     palette.setBrush(QPalette::Background, QBrush(pixmap.scaled(this->size(), Qt::IgnoreAspectRatio,Qt::SmoothTransformation)));
     this->setPalette(palette);
 
@@ -40,8 +40,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     trayicon = new QSystemTrayIcon(this);
     connect(trayicon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this, SLOT(onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason)));
-    //QIcon icon(":/To_Do_List.ico");
-    QIcon icon(":/To_Do_List_Hide2.ico");
+    QIcon icon(":/image/To_Do_List_Hide2.ico");
     trayicon->setIcon(icon);
     trayicon->setToolTip("Things To Do");
     trayicon->show();
@@ -194,7 +193,7 @@ void MainWindow::showItemMore(QList<QString>& list,QListWidgetItem *item)    {
             else {
                 if(updateIconTimer!=NULL&&updateIconTimer->isActive()) {
                     updateIconTimer->stop();
-                    trayicon->setIcon(QIcon(":/To_Do_List.ico"));
+                    trayicon->setIcon(QIcon(":/image/To_Do_List.ico"));
                 }
             }
             int hour=secs/3600;
@@ -400,11 +399,11 @@ void MainWindow::onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason reaso
 void MainWindow::updateIcon()   {
     QApplication::alert(this,750);
     if(iconIndex)   {
-        trayicon->setIcon(QIcon(":/To_Do_List.ico"));
+        trayicon->setIcon(QIcon(":/image/To_Do_List.ico"));
         iconIndex=false;
     }
     else    {
-        trayicon->setIcon(QIcon(":/To_Do_List_Hide2.ico"));
+        trayicon->setIcon(QIcon(":/image/To_Do_List_Hide2.ico"));
         iconIndex=true;
     }
     //iconIndex=!iconIndex;

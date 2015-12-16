@@ -29,17 +29,17 @@ int main(int argc, char *argv[])
 
         "QLCDNumber{color: #CC0033;background-color: #000000;text-align: center;}"
 
-        "QSpinBox {padding-right: 15px;border-image: url(:/frame.png) 4;border-width: 2;height:25px;width:50px;}"
-        "QSpinBox::up-button {subcontrol-origin: border;subcontrol-position: top right;width: 16px; border-image: url(:/spinup.png) 1; border-width: 1px;}"
-        "QSpinBox::up-button:hover {border-image: url(:/spinup_hover.png) 1;}"
-        "QSpinBox::up-button:pressed {border-image: url(:/spinup_pressed.png) 1;}"
-        "QSpinBox::up-arrow {image: url(:/up_arrow.png);width: 7px;height: 7px;}"
-        "QSpinBox::up-arrow:disabled, QSpinBox::up-arrow:off {image: url(:/up_arrow_disabled.png);}"
-        "QSpinBox::down-button {subcontrol-origin: border;subcontrol-position: bottom right;width: 16px;border-image: url(:/spindown.png) 1;border-width: 1px;border-top-width: 0;}"
-        "QSpinBox::down-button:hover {border-image: url(:/spindown_hover.png) 1;}"
-        "QSpinBox::down-button:pressed {border-image: url(:/spindown_pressed.png) 1;}"
-        "QSpinBox::down-arrow {image: url(:/down_arrow.png);width: 7px;height: 7px;}"
-        "QSpinBox::down-arrow:disabled,QSpinBox::down-arrow:off {image: url(:/down_arrow_disabled.png);}"
+        "QSpinBox {padding-right: 15px;border-image: url(:/image/frame.png) 4;border-width: 2;height:25px;width:50px;}"
+        "QSpinBox::up-button {subcontrol-origin: border;subcontrol-position: top right;width: 16px; border-image: url(:/image/spinup.png) 1; border-width: 1px;}"
+        "QSpinBox::up-button:hover {border-image: url(:/image/spinup_hover.png) 1;}"
+        "QSpinBox::up-button:pressed {border-image: url(:/image/spinup_pressed.png) 1;}"
+        "QSpinBox::up-arrow {image: url(:/image/up_arrow.png);width: 7px;height: 7px;}"
+        "QSpinBox::up-arrow:disabled, QSpinBox::up-arrow:off {image: url(:/image/up_arrow_disabled.png);}"
+        "QSpinBox::down-button {subcontrol-origin: border;subcontrol-position: bottom right;width: 16px;border-image: url(:/image/spindown.png) 1;border-width: 1px;border-top-width: 0;}"
+        "QSpinBox::down-button:hover {border-image: url(:/image/spindown_hover.png) 1;}"
+        "QSpinBox::down-button:pressed {border-image: url(:/image/spindown_pressed.png) 1;}"
+        "QSpinBox::down-arrow {image: url(:/image/down_arrow.png);width: 7px;height: 7px;}"
+        "QSpinBox::down-arrow:disabled,QSpinBox::down-arrow:off {image: url(:/image/down_arrow_disabled.png);}"
 
         "QLineEdit,QTextEdit{font-family:""微软雅黑"";font-size: 15px;width: 100%;height:20px; padding: 6px 12px;line-height: 1.42857143;color: #555;background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}"
                 );

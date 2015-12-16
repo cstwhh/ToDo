@@ -23,7 +23,7 @@ FORMS    += mainwindow.ui \
     setitem.ui
 
 RESOURCES += \
-    file.qrc
+    image.qrc
 
 DISTFILES += \
     icon.rc

@@ -11,7 +11,7 @@ setItem::setItem(MainWindow *parent, int month, int day, int hour, int minute, Q
 
     this->setAutoFillBackground(true);
     QPalette palette;
-    QPixmap pixmap(":/blue.jpg");
+    QPixmap pixmap(":/image/blue.jpg");
     palette.setBrush(QPalette::Window, QBrush(pixmap.scaled(this->size(), Qt::IgnoreAspectRatio,
                                                             Qt::SmoothTransformation)));
     this->setPalette(palette);
