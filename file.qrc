@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss.qss</file>
+        <file>code.jpg</file>
+        <file>blue.jpg</file>
+        <file>spinup.png</file>
+        <file>spinup_hover.png</file>
+        <file>spinup_pressed.png</file>
+        <file>frame.png</file>
+        <file>spindown.png</file>
+        <file>spindown_hover.png</file>
+        <file>spindown_pressed.png</file>
+        <file>down_arrow.png</file>
+        <file>down_arrow_disabled.png</file>
+        <file>up_arrow.png</file>
+        <file>up_arrow_disabled.png</file>
+        <file>To_Do_List.ico</file>
+        <file>To_Do_List_Hide.ico</file>
+        <file>To_Do_List_Hide2.ico</file>
+    </qresource>
+</RCC>
